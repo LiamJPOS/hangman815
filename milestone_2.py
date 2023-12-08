@@ -1,13 +1,19 @@
 import random
-
-word_list = ['apple', 'banana', 'grape', 'kiwi', 'strawberry']
-
-word = random.choice(word_list)
-
-guess = input('Guess a letter: ')
-if len(guess) == 1 and guess.isalpha():
-	print('Good guess')
-else: 
-	print('Oops that\'s not a valid input')
-
-print(word)
+class Hangman():
+    '''Runs an instance of the hangman game.'''
+    def __init__(self):
+        self.word_list = ['apple', 'banana', 'grape', 'kiwi', 'strawberry']
+        self.word = random.choice(self.word_list)
+    
+    def guess_letter(self):
+        while True:
+            guess = input('Guess a letter: 	')
+            if guess != 1 and guess.isalpha() == False:
+                print('Oops that\'s not a valid input')
+                continue
+            else:
+                print('Good guess')
+                break
+            
+new_game = Hangman()
+new_game.guess_letter()
