@@ -7,7 +7,7 @@ class Hangman():
     
     def guess_letter(self):
         while True:
-            guess = input('Guess a letter: 	')
+            guess = input('Guess a letter: ')
             if guess != 1 and guess.isalpha() == False:
                 print('Oops that\'s not a valid input')
                 continue
@@ -15,5 +15,4 @@ class Hangman():
                 print('Good guess')
                 break
             
-new_game = Hangman()
-new_game.guess_letter()
+
