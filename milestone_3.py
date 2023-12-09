@@ -19,6 +19,3 @@ def ask_for_input():
             continue
     check_guess(guess)
 
-new_game = Hangman()
-word = new_game.word
-ask_for_input()
