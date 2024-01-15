@@ -41,7 +41,6 @@ class Hangman():
 def play_game(word_list):
     '''Initialises an instance of Hangman and tracks the win or lose condition
     '''
-    #TODO Create better docstrings
     game = Hangman(word_list)
     while True:
         if game.num_lives == 0:
